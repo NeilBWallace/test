@@ -1,0 +1,17 @@
+
+.scroll-content{
+    background: url("/assets/123.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+
+ion-page{
+background-image:url('../assets/123.png');
+    
+}
+
+ion-page > ion-content{
+  background-color: transparent;
+}
