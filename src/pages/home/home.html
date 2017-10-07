@@ -15,7 +15,13 @@
   <ion-item>
     <ion-input [(ngModel)]="myInput"></ion-input>
   </ion-item>
+
+  <video #myvideo height="300" width="300" controls></video>
+
+  <button ion-button (click)="capture()">Lets take a picture!</button>
+  <img [src]="captureDataUrl" *ngIf="captureDataUrl"/>
   <button ion-button full (click)="AddRecord()">Save Record</button>
+  <button ion-button full (click)="UploadVideo()">Upload Video</button>
   
   <button ion-button full (click)="takePicture()">Take Picture</button>
   <button ion-button full (click)="downloadImageUrls()">Show Images</button>
@@ -36,5 +42,6 @@
       {{item.$value}}
     </ion-item>
   </ion-list>
+
 
 </ion-content>

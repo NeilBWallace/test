@@ -12,6 +12,8 @@ import { Camera } from '@ionic-native/camera';
 import { ImageProvider } from '../providers/image-provider';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import * as firebaseStorge from 'firebase/storage';
+
 var config = {
   apiKey: "AIzaSyCE8z153bgKkDLJeGLRhIUrH4BC_7RLzU4",
   authDomain: "challenge-me-11dcc.firebaseapp.com",
